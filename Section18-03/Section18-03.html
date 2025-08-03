@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 600px;
+            margin: auto;
+        }
+        .title {
+            background-color: red;
+            text-align: center;
+            height: 100px;
+        }
+
+        .title1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .input {
+            width: 25%;
+        }
+
+        .addBtn {
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 50px;
+            text-align: center;
+        }
+
+        #list {
+            text-align: center;
+            margin-top: 10px;
+            list-style: none;
+        }
+
+        li {
+            padding-top: 5px;
+            height: 25px;
+        }
+
+        ul li:nth-child(odd) {
+            background: #dbd4d4;
+        }
+
+        ul li:hover {
+            background: #c9b15e;
+        }
+
+        ul li.checked {
+            background: #888;
+            color: #fff;
+            text-decoration: line-through;
+        }
+        .delete{
+            border: 1px solid black;
+        }
+        .delete:hover{
+            background-color: gray;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="title">
+        <h3>Danh sách những việc cần làm trong năm</h3>
+        <form action="">
+            <input id="input">
+            <span id="submit" class="addBtn" onclick="add()">Add</span>
+        </form>
+    </div>
+
+    <ul id="list">
+        <li class="checked" >Xin viec o Google </li>
+        <li type="text" class="checked">Mua biet thu </li>
+        <li >Cuoi vo </li>
+        <li >Mua o to </li>
+        <li >Sinh con </li>
+        <li >di du lich vong quanh the gioi </li>
+    </ul>
+    </div>
+
+    <script src="/ss18/Section18-03/Section18-03.JS"></script>
+
+</body>
+
+</html>
