@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: antiquewhite;
+            width: 100%;
+        }
+
+        .student_list {
+            margin: 1%;
+            background-color: white;
+            width: 95%;
+            height: 100%;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            width: 100px;
+        }
+
+        .add {
+            padding-left: 60px;
+            text-align: center;
+            gap: 10px;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .add button {
+            background-color: rgb(0, 123, 255);
+            width: 170px;
+            height: 25px;
+            border-radius: 2px;
+        }
+
+        .add button:hover {
+            background-color: rgb(182, 212, 243);
+            width: 170px;
+            height: 25px;
+            border-radius: 2px;
+        }
+
+        .search {
+            position: relative;
+            display: flex;
+            margin: 10px;
+            left: 50px;
+        }
+
+        table {
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        .fix {
+            background-color: orange;
+        }
+
+        .fix:hover {
+            background-color: rgb(247, 224, 183);
+        }
+
+        .delete {
+            background-color: red;
+        }
+
+        .delete:hover {
+            background-color: rgb(248, 162, 162);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body onload="renderListStudent()">
+    <div class="student_list">
+        <h2>Quản lý danh sách sinh viên</h2>
+        <div class="add">
+            <input id="add_name" type="text" placeholder="Tên sinh viên">
+            <input id="add_age" type="text" placeholder="Tuổi">
+            <input id="add_class" type="text" placeholder="Lớp">
+            <button id="add_button" type="button" onclick="click()">Thêm sinh viên</button>
+        </div>
+        <div class="search"><input type="text" placeholder="Tìm kiếm sinh viên"></input></div>
+
+        <div class="result">
+            <table id="table">
+                <tr>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Lớp</th>
+                    <th colspan="2">Hành Động</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="/ss18/Section18-05/Section18-05.JS">
+    </script>
+
+</body>
+
+</html>
